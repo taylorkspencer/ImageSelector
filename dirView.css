@@ -1,0 +1,145 @@
+body
+{
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+#banner
+{
+	float: left;
+	vertical-align: middle;
+	display: table-cell;
+}
+#titleText
+{
+	text-align: left;
+	float: left;
+	font-family: sans-serif;
+	font-size: 24pt;
+	font-weight: bold;
+	vertical-align: middle;
+	display: table-cell;
+	height: 100%;
+}
+#tip
+{
+	text-align: left;
+	float: right;
+	font-family: sans-serif;
+	font-size: smaller;
+	vertical-align: middle;
+	display: table-cell;
+	overflow: hidden;
+	height: 100%;
+}
+#title
+{
+	background-image: url('title.gif');
+	display: table;
+	vertical-align: middle;
+	overflow: hidden;
+	height: 37px;
+	width: 100%;
+}
+.folderTree
+{
+	float: left;
+	text-align: left;
+}
+.viewSelector
+{
+	float: right;
+	text-align: right;
+}
+#folderBar
+{
+	font-family: sans-serif;
+	height: 20px;
+	width: 100%;
+	overflow: hidden;
+	background-image: url('titleBar.gif');
+}
+#directory
+{
+	text-align: center;
+	font-family: sans-serif;
+	width: 100%;
+	display: block;
+	overflow-x: auto;
+	overflow-y: scroll;
+}
+.row
+{
+	display: table;
+	width: 100%;
+}
+.file
+{
+	display: table-cell;
+	text-align: center;
+	border: 0px none;
+	color: #000000;
+	text-decoration: none;
+	/* Note:  It is necessary that these values not be */
+	/* set to auto in order for IE to display it properly */
+	margin-left: 8px;
+	margin-right: 8px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	height: 75px; /* A height must be defined in order for IE to display this the right way */
+}
+.thumbnail
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border: 0px none;
+	width: 75px;
+}
+.fileTitle
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.fileTitle:focus
+{
+	color: white;
+	background-color: #000066;
+}
+.fileTitle:active
+{
+	color: white;
+	background-color: navy;
+}
+#infoBar
+{
+	display: none;
+	border: 1px outset #000000;
+	color: #000000;
+	font-family: sans-serif;
+	font-size: 11pt;
+	text-align: left;
+	background-color: #FFFFCC;
+	background-image: url('alert.gif');
+	background-repeat: no-repeat;
+	background-position: top left;
+	margin: 0px;
+	padding-left: 25px;
+	padding-right: 20px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	position: absolute;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: auto;
+	z-index: 3;
+	text-decoration: none;
+}
+#infoBar:hover
+{
+	color: #FFFFFF;
+	background-color: #000066;
+}

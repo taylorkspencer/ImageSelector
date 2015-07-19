@@ -1,0 +1,31 @@
+<!--I need for IE to render this page in querks mode because it doesn't handle this page well in standards compliance mode (unlike most other browsers)-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>Image Selector</title>
+<link href="slideshow.css" rel="stylesheet" type="text/css">
+</head>
+<body onLoad="javascript:startSlideshow();" onResize="javascript:resize();">
+<a href="#" id="infoBar" onMouseOver="javascript:closeBtn.src='close-hover.gif';" onMouseOut="javascript:closeBtn.src='close.gif';"><img src=close.gif id="closeBtn" style="position: absolute; right: 0px; border: 0px none;" onClick="closeInfoBar();" title="Close This Bar" alt="Close This Bar"><span onClick="javascript:location.href='http://www.browsehappy.com/'">Notice:&nbsp; This site uses advanced features of the HTML specification which are not supported by Internet Explorer, including alternate stylesheets, JavaScript timers, and PNG alpha transparency.&nbsp; In order to experience Image Selector to its fullest extent, I recommend you switch to a more standards-compliant browser.&nbsp; To find more information about standard-compliant browsers, including how to switch, click here.</span></a>
+<div id=imageWrapper><img src="blank.gif" height="225" width="1" align="absbottom" alt=""><span id=image onClick="javascript:loadImage();">Loading...</span><img src="blank.gif" height="225" width="1" align="absbottom" alt="">
+  <div id=descriptionWrapper><a href="javascript:firstImage();" title="First Image" class=actualLink><img src=first.gif alt="First Image"></a><a href="javascript:previousImage();" title="Previous Image" class=actualLink><img src=previous.gif alt="Previous Image"></a><span id=description onClick="javascript:loadImage();">If an image does not display here by the time this page has loaded, please enable JavaScript.</span><a href="javascript:nextImage();" title="Next Image" class=actualLink><img src=next.gif alt="Next Image"></a><a href="javascript:lastImage();" title="Last Image" class=actualLink><img src=last.gif alt="Last Image"></a></div>
+  <form id=autoSlideshowBar><div id=text>Image changes in 
+    <select id=interval name=interval onChange="javascript:setSlideshowInterval();">
+      <option>0 (Slideshow Disabled)</option>
+      <option>30</option>
+      <option selected>60</option>
+      <option>120</option>
+    </select>
+    seconds</div></form>
+</div>
+  <!--[if IE]><a id=title href="#" class=ieCompatiblity><![endif]--><![if !IE]><a id=title class=ieCompatiblity><![endif]>
+  <span id=titleText>Loading...</span><span class=modeSwitcher><span onClick="javascript:location.href='dirView.html';" class=link>Directory View</span><span class=activeChoice>Slideshow View</span></span>
+  <span class=titleBar>Title Bar</span></a>
+  <a id=selector href="#" title="Image Selector" class=ieCompatiblity>
+  <span class=titleBar>Image Selector</span>
+  <img src="imageSelectorLabel.gif" alt="Image Selector
+Please select your image here to display it in the pane.  If you wish to download it, double click on it." title="Image Selector" id="imageSelectorLabel">
+    <span id="imagePanels">If you do not see any images here by the time this page has loaded, please enable JavaScript.</span></a>
+<script type="text/javascript" src="slideshow.js"></script>
+</body>
+</html>

@@ -1,0 +1,371 @@
+#selector
+{
+	vertical-align: bottom;
+	text-align: center;
+	display: block;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+	clear: both;
+	float: none;
+	background-image: url(selector.gif);
+	background-repeat: repeat-x;
+	background-position: center center;
+	border: 1px solid #999999;
+	position: absolute;
+	left: 0%;
+	top: auto;
+	right: 0%;
+	bottom: -156px;
+	z-index: 2;
+	height: 177px;
+}
+
+#title
+{
+	vertical-align: top;
+	margin: 0px;
+	padding: 0px;
+	display: block;
+	clear: both;
+	float: none;
+	width: 100%;
+	border: 1px solid #999999;
+	position: absolute;
+	left: 0%;
+	top: -47px;
+	right: 0%;
+	bottom: auto;
+	background-image: url(title.gif);
+	background-repeat: repeat-x;
+	background-position: center center;
+	z-index: 2;
+	cursor: default;
+}
+
+#titleText
+{
+	vertical-align: middle;
+	float: left;
+	font-size: 40px;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+.modeSwitcher
+{
+	display: inline-table;
+	height: 100%;
+	text-align: right;
+	padding-right: 4px;
+	padding-left: 0px;
+	vertical-align: middle;
+	float: right;
+}
+
+.link
+{
+	cursor: pointer;
+	color: blue;
+	text-decoration: underline;
+	display: block;
+}
+
+.activeChoice
+{
+	font-weight: bold;
+	display: block;
+}
+
+.actualLink
+{
+	display: table-cell;
+	color: #000000;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-size: smaller;
+	width: 100px;
+	vertical-align: middle;
+	text-align: center;
+	margin: 0px;
+	padding: 4px;
+	z-index: 3;
+	cursor: pointer;
+}
+
+img
+{
+	border: 0px none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.thumbnail
+{
+	width: 90px;
+	height: auto;
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	clear: none;
+	float: none;
+}
+
+#imageWrapper
+{
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	width: 100%;
+	display: table;
+	text-align: center;
+	vertical-align: middle;
+	clear: none;
+	float: none;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	background: none;
+}
+
+body
+{
+	margin: 0px;
+	padding: 0px;
+	background-image: url(main.gif);
+	background-attachment: scroll;
+	background-repeat: repeat-x;
+	background-position: center top;
+	background-color: #CCCCCC;
+	display: block;
+	text-align: center;
+	vertical-align: middle;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.selected
+{
+	display: inline-table;
+	color: #000000;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-size: smaller;
+	width: 100px;
+	text-align: center;
+	margin: 0px;
+	padding: 4px;
+	z-index: 3;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url(selected.gif);
+	vertical-align: middle;
+	height: 100%;
+	overflow: hidden;
+}
+
+.unselected
+{
+	display: inline-table;
+	color: #000000;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-size: smaller;
+	width: 100px;
+	text-align: center;
+	margin: 0px;
+	padding: 4px;
+	z-index: 3;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url(unselected.gif);
+	vertical-align: middle;
+	height: 100%;
+	overflow: hidden;
+}
+
+.img
+{
+	text-align: center;
+	border: 1px solid #999999;
+	margin: 0px;
+	padding: 0px;
+	vertical-align: bottom;
+}
+
+#image
+{
+	text-align: center;
+	display: inline-table;
+	font-family: sans-serif;
+	font-size: small;
+	cursor: pointer;
+}
+
+#descriptionWrapper
+{
+	font-family: sans-serif;
+	font-size: 10pt;
+	text-align: center;
+	display: table;
+	vertical-align: middle;
+	width: 100%;
+}
+
+#description
+{
+	display: table-cell;
+	cursor: pointer;
+}
+
+.titleBar
+{
+	text-align: center;
+	clear: both;
+	float: none;
+	font-family: sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #3C7D91;
+	width: 100%;
+	margin: 0px;
+	border-top: thin outset #FFFFFF;
+	border-right: thin outset #666666;
+	border-bottom: thin outset #666666;
+	border-left: thin outset #FFFFFF;
+	background-image: url(titleBar.gif);
+	background-repeat: repeat-x;
+	background-position: center center;
+	cursor: default;
+	z-index: 4;
+	white-space: nowrap;
+	visibility: visible;
+	height: 20px;
+	display: block;
+	vertical-align: middle;
+}
+
+#autoSlideshowBar
+{
+	display: block;
+	text-align: center;
+	vertical-align: middle;
+	margin: 0px;
+	padding: 0px;
+	clear: none;
+	float: none;
+	font-family: sans-serif;
+	font-size: 10pt;
+	cursor: default;
+}
+
+#interval
+{
+	font-family: sans-serif;
+	vertical-align: middle;
+}
+
+#imageSelectorLabel
+{
+	display: table-cell;
+	margin: 0px;
+	padding: 0px;
+	vertical-align: middle;
+	height: 153px;
+	width: 104px;
+	text-align: center;
+	float: left;
+	clear: none;
+}
+
+#imagePanels
+{
+	float: right;
+	clear: none;
+	text-align: center;
+	height: 155px;
+	vertical-align: middle;
+	display: table-cell;
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif;
+	overflow-x: scroll;
+	overflow-y: hidden;
+}
+
+#selector:hover
+{
+	bottom: 0%;
+}
+
+#title:hover
+{
+	top: 0%;
+}
+
+#title .titleBar
+{
+	top: auto;
+	bottom: 0%;
+	position: static;
+}
+
+#selector .titleBar
+{
+	top: 0%;
+	bottom: auto;
+}
+
+#title:hover .titleBar
+{
+	top: 0%;
+	bottom: auto;
+}
+
+.ieCompatiblity
+{
+	cursor: default;
+	display: block;
+	color: #000000;
+	text-decoration: none;
+	height: auto;
+	width: 100%;
+}
+
+#infoBar
+{
+	display: none;
+	border: 1px outset #000000;
+	color: #000000;
+	font-family: sans-serif;
+	font-size: 11pt;
+	text-align: left;
+	background-color: #FFFFCC;
+	background-image: url('alert.gif');
+	background-repeat: no-repeat;
+	background-position: top left;
+	margin: 0px;
+	padding-left: 25px;
+	padding-right: 20px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	position: absolute;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: auto;
+	z-index: 3;
+	text-decoration: none;
+}
+
+#infoBar:hover
+{
+	color: #FFFFFF;
+	background-color: #000066;
+}

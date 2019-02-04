@@ -1,8 +1,16 @@
 <!--I need for IE to render this page in querks mode because it doesn't handle this page well in standards compliance mode (unlike most other browsers)-->
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M88SN92');</script>
+<!-- End Google Tag Manager -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 <title>Image Selector</title>
+<meta name="robots" content="noindex,follow"/>
 <link rel="stylesheet" type="text/css" href="dirView.css" title="Thumbnails View (Default)" media="screen">
 <link rel="alternate stylesheet" type="text/css" href="dirViewList.css" title="List View" media="screen">
 <link rel="alternate stylesheet" type="text/css" href="dirViewTiles.css" title="Tiles View" media="screen">
@@ -10,6 +18,10 @@
 <link rel="stylesheet" type="text/css" href="dirViewHandheld.css" media="handheld">
 </head>
 <body onLoad="javascript:resize();" onResize="javascript:resize();">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M88SN92"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <a href="#" id="infoBar" onMouseOver="javascript:closeBtn.src='close-hover.gif';" onMouseOut="javascript:closeBtn.src='close.gif';"><img src=close.gif id="closeBtn" style="position: absolute; right: 0px; border: 0px none;" onClick="closeInfoBar();" title="Close This Bar" alt="Close This Bar"><span onClick="javascript:location.href='http://www.browsehappy.com/'">Notice:&nbsp; This site uses advanced features of the HTML specification which are not supported by Internet Explorer, including alternate stylesheets, JavaScript timers, and PNG alpha transparency.&nbsp; In order to experience Image Selector to its fullest extent, I recommend you switch to a more standards-compliant browser.&nbsp; To find more information about standard-compliant browsers, including how to switch, click here.</span></a>
 <div id=title><img src=dirView.png id=banner alt="Image Selector Icon" title=""><span id=titleText>Loading...</span><span id=tip>Tip:&nbsp; You can change file views by changing the stylesheet by going to your browser's<br>View menu and clicking Page Style in Firefox.</span></div>
 <div id=folderBar><span class=folderTree title="Folder Tree">E:<img src=arrow.png align=absmiddle alt="Next Directory">ImageSelector</span><span class=viewSelector title="View Selector"><b>Directory View</b>&nbsp; &nbsp;<a href="slideshow.html">Slideshow View</a></span></div>
